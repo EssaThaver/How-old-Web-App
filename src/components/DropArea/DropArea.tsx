@@ -59,7 +59,7 @@ export default class DropArea extends React.Component<IProps, IState>{
                     if(json.length<1){
                         this.props.setResults("Sorry no face detected",this.state.imageFiles.length)
                     }else{
-                        this.props.setResults("Age is "+json[0].faceAttributes.age,this.state.imageFiles.length)
+                        this.props.setResults("I Guess the age is "+json[0].faceAttributes.age,this.state.imageFiles.length)
                     }
                 })
             }
