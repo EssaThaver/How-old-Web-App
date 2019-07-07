@@ -13,7 +13,7 @@ export default class Result extends React.Component<IProps,{}> {
       <div className="dank">
         {
           this.props.result === "" && this.props.filelength>0 ?
-            <Loader type="TailSpin" color="#00BFFF" height={80} width={80} /> :
+            <Loader type="TailSpin" color="goldenrod" height={80} width={80} /> :
             <p>{this.props.result}</p>
         }
       </div>
